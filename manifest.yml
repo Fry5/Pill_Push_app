@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 1024M
+  instances: 1
+  domain: eu-gb.mybluemix.net
+  name: Pill Push
+  host: pill-push
+  disk_quota: 1024M
+  services:
+  - Pill Push-cloudantNoSQLDB
+  - Pill Push-imfpush
+  - Pill Push-AdvancedMobileAccess
